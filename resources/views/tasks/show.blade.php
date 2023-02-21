@@ -11,10 +11,13 @@
             <th>id</th>
             <td>{{ $task->id }}</td>
         </tr>
-
         <tr>
-            <th>メッセージ</th>
+            <th>内容</th>
             <td>{{ $task->content }}</td>
+        </tr>
+        <tr>
+            <th>ステータス</th>
+            <td>{{ $task->status }}</td>
         </tr>
     </table>
     <a class="btn btn-outline" href="{{ route('tasks.edit', $task->id) }}">編集</a>
